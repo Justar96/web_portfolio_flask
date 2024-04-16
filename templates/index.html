@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=VT323&display=swap" rel="stylesheet">
+  <title>begetar-terminal</title>
+</head>
+
+<body>
+  <div class="noselect">
+    <div class="container" id="1st-page">
+      <nav>
+        <ul>
+          <li id="about">/about</li>
+          <li id="contact">/contact</li>
+        </ul>
+      </nav>
+      <main>
+        <h1><span>bege</span><span>tar</span><span>:</span><span id="cursor">|</span><span id="cursor"></span></h1>
+        <h5>@nalongkorn panti 1996</h5>
+        <h3 id="h3-1stpage">Find me online:</h3>
+        <ul>
+          <li>
+            <a href="https://github.com/Justar96" target="_blank">github</a>
+          </li>
+          <li>
+            <a href="https://leetcode.com/justar1996/" target="_blank">leetcode</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/?trk=seo-authwall-base_nav-header-logo" target="_blank">Linkedin</a>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <div class="hidden" class="noselect">
+      <div id="about-content">
+        <h2>about-me:<span class="cursor_2">|</span></h2>
+        <p id="new_win">
+          Hi.my name is Guitar and i have been programming for 4 months now
+        </p>
+        <p id="new_win">
+          Some of the language that I am fluent in include JavaScript , Python
+        </p>
+      </div>
+      <div id="contact-content">
+        <h2>contact-me:<span class="cursor_2">|</span></h2>
+        <p id="new_win">Phone : 090-9091325</p>
+        <p id="new_win">E-mail : nalongkon1996@gmail.com</p>
+      </div>
+    </div>
+
+    <!-- 2nd page -->
+    <div class="container-toggle" id="2nd-page">
+      <main id="main-2ndpage">
+        <div id="todaysDate"></div>
+        <div class="terminalCont">
+          <div id="terminalReslutsCont">
+          </div>
+          <form>
+            <h1 id="terminal">guest@begetar-terminal ~ % <input id="terminalTextInput" type="text"
+                placeholder="try typing help..." autocomplete="off"></h1>
+          </form>
+        </div>
+    </div>
+
+    </main>
+  </div>
+  </div>
+  <div class="button-box noselect">
+    <div id="btn"></div>
+    <button type="button" class="toggle-btn pageToggle" id="toggle-btn-left" onclick="leftClick()">
+      webpage
+    </button>
+
+    <button type="button" class="toggle-btn pageToggle" id="toggle-btn-right" onclick="rightClick()">
+      terminal
+    </button>
+
+  </div>
+  </div>
+  </div>
+
+
+  <script src="winbox.bundle.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
