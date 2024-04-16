@@ -7,4 +7,5 @@ def home():
 
 
 if __name__ == '__main__':
-    app.run(host='8.213.211.211',port=443,ssl_context='adhoc')
+    # app.run(host='8.213.211.211',port=8080,ssl_context='adhoc')
+    app.run(host='0.0.0.0',port=443,ssl_context='adhoc')
